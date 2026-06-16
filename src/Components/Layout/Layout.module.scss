@@ -1,0 +1,37 @@
+@use '@/styles/utils' as *;
+
+.header {
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+
+.container {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container;
+}
+
+.logoLink {
+  @include link(3rem, false);
+}
+
+.navLinks {
+  display: none;
+  @media ($tablet) {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.navLink {
+  @include link(2.4rem);
+}
+
+.main {
+  padding: 4rem;
+  min-height: calc(100vh - 8rem);
+}

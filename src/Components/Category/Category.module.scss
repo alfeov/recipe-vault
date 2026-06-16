@@ -1,0 +1,14 @@
+@use '@/styles/utils' as *;
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.button {
+  @include button;
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+}

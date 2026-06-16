@@ -1,0 +1,9 @@
+@use '@/styles/utils' as *;
+
+.cards {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 30rem));
+  justify-content: center;
+  flex-grow: 1;
+}

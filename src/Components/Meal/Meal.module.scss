@@ -1,0 +1,52 @@
+@use '@/styles/utils' as *;
+
+.meal {
+  display: grid;
+  gap: 2.4rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.stage {
+  display: grid;
+  gap: 2.4rem;
+
+  @media ($tablet) {
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.table {
+  display: grid;
+  gap: 0.8rem;
+  &__row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.button {
+  @include button;
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.iframeContainer {
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+}

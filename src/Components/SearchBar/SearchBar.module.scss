@@ -1,0 +1,31 @@
+@use '@/styles/utils' as *;
+
+.form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40rem;
+  font-size: 1.8rem;
+  display: flex;
+  border-radius: 2rem;
+  transition: box-shadow var(--transition-duration-s);
+  &:hover {
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.field {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1.4rem 1.8rem;
+  border-radius: 2rem 0 0 2rem;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  &::placeholder {
+    color: var(--text-color-notActive);
+  }
+}
+
+.button {
+  @include button;
+  border-radius: 0 2rem 2rem 0;
+}

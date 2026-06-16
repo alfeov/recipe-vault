@@ -1,0 +1,59 @@
+@use '@/styles/utils' as *;
+
+.card {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--transition-duration-s);
+  &:hover {
+    box-shadow: 0 0 20px var(--primary-color);
+  }
+}
+
+.imgWrapper {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1/1;
+  color: var(--primary-color);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity var(--transition-duration-s) ease;
+}
+
+.footer {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  @include truncate;
+}
+
+.info {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  padding: 0;
+  flex-grow: 1;
+  li {
+    @include multiline-truncate;
+    &::before {
+      content: '\2022 ';
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.button {
+  margin: 1rem 0;
+  @include button;
+}

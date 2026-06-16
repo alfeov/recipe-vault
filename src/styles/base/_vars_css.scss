@@ -1,0 +1,14 @@
+// colors
+
+:root {
+  --primary-color: rgb(224, 132, 27);
+  --secondary-color: white;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --text-color-notActive: gray;
+  --transition-duration-s: 200ms;
+  --transition-duration-m: 400ms;
+  --border-radius-s: 1rem;
+  --border-radius-m: 2rem;
+  --box-shadow: 0 0 6px var(--primary-color);
+}
