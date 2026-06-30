@@ -7,7 +7,8 @@ export function Card({ id, title, image, desc, buttonText, onClick }) {
   const [imgLoading, setImgLoading] = useState(true)
 
   const handleLoad = () => {
-    setImgLoading(false)
+    // to show loader spinning
+    setTimeout(() => setImgLoading(false), 1000)
   }
 
   return (

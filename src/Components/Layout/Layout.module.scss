@@ -32,6 +32,9 @@
 }
 
 .main {
-  padding: 4rem;
+  padding: 3rem;
+  @media ($laptop) {
+    padding: 4rem;
+  }
   min-height: calc(100vh - 8rem);
 }
